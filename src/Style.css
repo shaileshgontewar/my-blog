@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+html{
+    font-size: 16px;
+}
+a {
+  text-decoration: none;
+}
+
+/* Button Css */
+.container__button button {
+  background: none;
+  border: none;
+}
+
+/* Card Css */
+.main__container {
+  display: flex;
+}
+
+.card__container {
+  display: flex;
+}
+
+.card__container img {
+  width: 20rem;
+  height: 15rem;
+  object-fit: cover;
+}
+
+.mobile__nav {
+  display: none;
+}
+
+
+/* rightbar and left bar css */
+.box2{
+    display: flex;
+    flex-direction: column;
+}
+.rightbar {
+  width: 70%;
+}
+
+.sidebar {
+  width: 20%;
+  margin-left: 2.5rem;
+}
+
+
+.main__container {
+  margin: 0px 10%;
+}
+
+.bigcard__data {
+  box-sizing: border-box;
+  padding-right: 1.25rem;
+  margin-left: 1.25rem;
+}
+.bigcard__data h5 {
+  color: black;
+  text-decoration: none;
+}
+
+/* advertisement */
+.advertisement {
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 8.75rem;
+  width: 12.5rem;
+  height: 18.75rem;
+  /* border: 2px solid ; */
+  margin-left: 0.625rem;
+  font-weight: bolder;
+}
+
+/* Home Css */
+.Home {
+  margin: 1rem;
+}
+.home__container {
+  display: flex;
+}
+
+.home__first {
+  text-align: center;
+  box-sizing: border-box;
+  display: inline-block;
+  color: white;
+  width: 70%;
+  height: 37rem;
+  background: url("https://pullman.accor.com/destinations/country/thailand-1400x788-1.jpg");
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home__first h1 {
+  padding-top: 18rem;
+}
+.home__sec {
+  display: inline-block;
+  width: 30%;
+  margin-left: 1rem;
+}
+.home__sec img {
+  width: 100%;
+  height: 18rem;
+  border-radius: 15px;
+  object-fit: cover;
+}
+.home__thir {
+  display: inline-block;
+  width: 20rem;
+  height: 15rem;
+  position: absolute;
+  top: 34rem;
+  right: 0;
+ 
+}
+.home__thir img {
+  width: 100%;
+  height: 15rem;
+  border-radius: 0.5;
+  object-fit: cover;
+}
+.middle1{
+    margin-top: 2rem;
+}
+.Home .box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.home__left {
+  margin: 1rem;
+  width: 20rem;
+  height: 30rem;
+}
+.home__left img {
+  width: 100%;
+  height: 14rem;
+  object-fit: cover;
+}
+.home__bigcard__data {
+  margin-top: 1rem;
+}
+.home__bigcard__data > h3{
+    font-size: 1.4rem;
+}
+.home__bigcard__data > p{
+    font-size: .9rem;
+}
+
+
+@media (max-width: 550px) {
+    html{
+        font-size: 10px;
+    }
+  .rightbar {
+    width: 100%;
+  }
+  .sidebar {
+    display: none;
+    width: 20%;
+    margin-left: 2.5rem;
+  }
+  .nav {
+    margin-left: 0.625rem;
+  }
+  .nav ul {
+    display: inline-block;
+    list-style-type: none;
+  }
+ .card__container{
+  flex-wrap: wrap;
+ }
+  /* .card__container img {
+    width: 6.25rem;
+    height: 6.25rem;
+  } */
+
+  /* Home css */
+  .home__sec {
+    display: none;
+  }
+  .home__thir {
+    display: none;
+  }
+  .Top {
+    display: none;
+    /* margin-left: 600px; */
+    margin-top: 2.5rem;
+  }
+
+  .home__left {
+    width: 100%;
+  }
+  .home__left img {
+    width: 100%;
+  }
+  .home__first {
+    width: 100%;
+  }
+  .rightbar2 {
+    width: 100%;
+  }
+  .single__page {
+    width: 70%;
+  }
+  .single__page img {
+    width: 100%;
+    height: 40vh;
+  }
+
+  /* Navigation bar */
+  .desktop__nav {
+    display: none;
+  }
+  .mobile__nav {
+    display: block;
+  }
+  .toogle__button {
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
+    background-color: transparent;
+    border: none;
+  }
+  .icon {
+    color: black;
+    width: 3.125rem;
+    display: block;
+  }
+}
