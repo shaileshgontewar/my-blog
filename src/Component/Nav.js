@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Nav.css";
 
 const Nav = () => {
   const [data, setData] = useState({ show: false });
-
   const toggle = () => {
     data.show ? setData({ show: false }) : setData({ show: true });
   };
@@ -14,47 +13,46 @@ const Nav = () => {
       <div className="desktop__nav">
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <Link to="/bollywood">Bollywood</Link>
+            <NavLink to="/bollywood">Bollywood</NavLink>
           </li>
           <li>
-            <Link to="/technology">Technology</Link>
+            <NavLink to="/technology">Technology</NavLink>
           </li>
           <li>
-            <Link to="/hollywood">Hollywood</Link>
+            <NavLink to="/hollywood">Hollywood</NavLink>
           </li>
           <li>
-            <Link to="/fitness">Fitness</Link>
+            <NavLink to="/fitness">Fitness</NavLink>
           </li>
           <li>
-            <Link to="/food">Food</Link>
+            <NavLink to="/food">Food</NavLink>
           </li>
         </ul>
       </div>
-
       <div className="mobile__nav">
         {data.show && (
           <div className="nav">
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <NavLink to="/">Home</NavLink>
               </li>
               <li>
-                <Link to="/bollywood">Bollywood</Link>
+                <NavLink to="/bollywood">Bollywood</NavLink>
               </li>
               <li>
-                <Link to="/technology">Technology</Link>
+                <NavLink to="/technology">Technology</NavLink>
               </li>
               <li>
-                <Link to="/hollywood">Hollywood</Link>
+                <NavLink to="/hollywood">Hollywood</NavLink>
               </li>
               <li>
-                <Link to="/fitness">Fitness</Link>
+                <NavLink to="/fitness">Fitness</NavLink>
               </li>
               <li>
-                <Link to="/food">Food</Link>
+                <NavLink to="/food">Food</NavLink>
               </li>
             </ul>
           </div>
